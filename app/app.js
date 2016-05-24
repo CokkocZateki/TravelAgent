@@ -10,13 +10,13 @@ angular.module('myApp', [
     'myApp.version'
 ]).config(['$routeProvider', function ($routeProvider) {
         $routeProvider.when('/hotel', {
-            templateUrl: 'views/hotelView/hotelView.html',
+            templateUrl: 'views/hotelView/hotelSearchView.html',
             controller: 'HotelViewCtrl'
         }).when('/flight', {
-            templateUrl: 'views/airView/airView.html',
+            templateUrl: 'views/airView/airSearchView.html',
             controller: 'AirViewCtrl'
         }).when('/car', {
-            templateUrl: 'views/carView/carView.html',
+            templateUrl: 'views/carView/carSearchView.html',
             controller: 'CarViewCtrl'
         }).otherwise({redirectTo: '/hotel'});
     }])

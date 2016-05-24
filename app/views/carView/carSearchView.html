@@ -1,11 +1,11 @@
-<div class="banner banner-hotel">
+<div class="banner banner-car">
     <div class="container">
         <div class="banner-top">
-            <h1>Search Hotels</h1>
+            <h1>Search Cars</h1>
             <div class="banner-bottom">
                 <div class="bnr-one">
                     <div class="bnr-left">
-                        <p>Location</p>
+                        <p>Picking Up</p>
                     </div>
                     <div class="bnr-right">
                         <input id="autoCompleteField" type="text" value="" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '';}" required=>
@@ -14,7 +14,16 @@
                 </div>
                 <div class="bnr-one">
                     <div class="bnr-left">
-                        <p>Check In</p>
+                        <p>Dropping Off</p>
+                    </div>
+                    <div class="bnr-right">
+                        <input id="autoCompleteField1" type="text" value="" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '';}" required=>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="bnr-one">
+                    <div class="bnr-left">
+                        <p>Pick Up Date</p>
                     </div>
                     <div class="bnr-right">
                         <input class="date" id="datepicker" type="text" value="" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '';}" required=>
@@ -23,44 +32,17 @@
                 </div>
                 <div class="bnr-one">
                     <div class="bnr-left">
-                        <p>Check Out</p>
+                        <p>Drop Off Date</p>
                     </div>
                     <div class="bnr-right">
                         <input class="date" id="datepicker1" type="text" value="" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '';}" required=>
                     </div>
                     <div class="clearfix"></div>
                 </div>
-                <div class="bnr-one">
-                    <div class="bnr-left">
-                        <p>Adults</p>
-                    </div>
-                    <div class="bnr-right">
-                        <select>
-                            <option  class="rm" value="volvo">0</option>
-                            <option  class="rm" value="saab">1</option>
-                            <option  class="rm" value="opel">2</option>
-                            <option  class="rm" value="audi">3</option>
-                        </select>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-                <div class="bnr-one">
-                    <div class="bnr-left">
-                        <p>Room</p>
-                    </div>
-                    <div class="bnr-right">
-                        <select>
-                            <option value="volvo">Select a type</option>
-                            <option value="saab">Single</option>
-                            <option value="opel">Double</option>
-                            <option value="audi">Suite</option>
-                        </select>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
+
                 <div class="bnr-btn">
                     <form>
-                        <input type="submit" value="Search">
+                        <input type="submit" value="Search" onclick="window.location.href='#/car/results'">
                     </form>
                 </div>
             </div>
@@ -93,7 +75,7 @@
             theme: "square"
         };
 
-        $("#autoCompleteField").easyAutocomplete(options);
+        $("#autoCompleteField, #autoCompleteField1").easyAutocomplete(options);
     })(jQuery)
 </script>
 <!---/End-date-piker---->
