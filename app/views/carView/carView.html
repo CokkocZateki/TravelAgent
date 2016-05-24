@@ -1,10 +1,81 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<div class="banner banner-car">
+    <div class="container">
+        <div class="banner-top">
+            <h1>Search Cars</h1>
+            <div class="banner-bottom">
+                <div class="bnr-one">
+                    <div class="bnr-left">
+                        <p>Picking Up</p>
+                    </div>
+                    <div class="bnr-right">
+                        <input id="autoCompleteField" type="text" value="" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '';}" required=>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="bnr-one">
+                    <div class="bnr-left">
+                        <p>Dropping Off</p>
+                    </div>
+                    <div class="bnr-right">
+                        <input id="autoCompleteField1" type="text" value="" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '';}" required=>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="bnr-one">
+                    <div class="bnr-left">
+                        <p>Pick Up Date</p>
+                    </div>
+                    <div class="bnr-right">
+                        <input class="date" id="datepicker" type="text" value="" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '';}" required=>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="bnr-one">
+                    <div class="bnr-left">
+                        <p>Drop Off Date</p>
+                    </div>
+                    <div class="bnr-right">
+                        <input class="date" id="datepicker1" type="text" value="" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '';}" required=>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
 
-</body>
-</html>
+                <div class="bnr-btn">
+                    <form>
+                        <input type="submit" value="Search">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end-banner-->
+<!---start-date-piker---->
+<script>
+    $(function() {
+        $( "#datepicker,#datepicker1" ).datepicker();
+    });
+</script>
+
+<script>
+    (function ($) {
+
+        var options = {
+
+            url: "resources/airports.json",
+
+            getValue: "name",
+
+            list: {
+                match: {
+                    enabled: true
+                }
+            },
+
+            theme: "square"
+        };
+
+        $("#autoCompleteField, #autoCompleteField1").easyAutocomplete(options);
+    })(jQuery)
+</script>
+<!---/End-date-piker---->

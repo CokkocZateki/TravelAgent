@@ -169,7 +169,7 @@ ul.navig {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: #ffeb00;
+	background: #f5f5dc;
 	-webkit-transform: scaleY(0);
 	transform: scaleY(0);
 	-webkit-transform-origin: 50% 0;
@@ -191,7 +191,7 @@ ul.navig {
 	transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
 }
 ul.navig li a.active{
-	background:#ffeb00;
+	background:#f5f5dc;
 	color:#403F45;
 }
 /* Shutter Out Horizontal */
@@ -240,7 +240,6 @@ ul.navig li a.active{
 /*--Header-Ends--*/
 /*--banner-starts--*/
 .banner{
-	background:url(../images/banner.jpg) no-repeat;
 	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
@@ -249,12 +248,21 @@ ul.navig li a.active{
 	min-height:670px;
 	position:relative;
 }
+.banner-hotel{
+    background:url(../images/banner2.jpg) no-repeat;
+}
+.banner-car{
+    background:url(../images/banner.jpg) no-repeat;
+}
+.banner-air{
+    background:url(../images/banner1.jpg) no-repeat;
+}
 .banner-top {
 	position: absolute;
 	width: 35%;
 	padding: 2em 30px;
 	background: rgba(228, 232, 246, 0.56);
-	top: 20.5%;
+	top: 18%;
 	left: 13.5%;
 }
 .banner-top h1 {
@@ -802,7 +810,7 @@ p.admin {
 	color:#fff;
 }
 .footer-top p a:hover{
-	color:#ffeb00;
+	color:#f5f5dc;
 }
 /*--footer-end--*/
 /*--typo-start--*/

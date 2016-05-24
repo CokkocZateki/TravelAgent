@@ -4,8 +4,6 @@
 angular.module('myApp', [
     'ngRoute',
     'ngAnimate',
-    'route-segment',
-    'view-segment',
     'myApp.hotelView',
     'myApp.airView',
     'myApp.carView',
