@@ -1,18 +1,14 @@
-# angular-seed — the seed for AngularJS apps
+# Online Travel Agency Web Application
 
-This project is an application skeleton for a typical [AngularJS](http://angularjs.org/) web app.
-You can use it to quickly bootstrap your angular webapp projects and dev environment for these
-projects.
+This project is an web application for online travel agency. User can book hotel, flight and car in
+this application.
 
-The seed contains a sample AngularJS application and is preconfigured to install the Angular
-framework and a bunch of development and testing tools for instant web development gratification.
-
-The seed app doesn't do much, just shows how to wire two controllers and views together.
-
+The project was built in AngularJS. There are some useful instruction below if you want to run the
+application.
 
 ## Getting Started
 
-To get you started you can simply clone the angular-seed repository and install the dependencies:
+To get you started you can simply clone the repository or download the zip file:
 
 ### Prerequisites
 
@@ -40,6 +36,9 @@ git clone --depth=1 https://github.com/angular/angular-seed.git <your-project-na
 The `depth=1` tells git to only pull down one commit worth of historical data.
 
 ### Install Dependencies
+
+This project has already got dependencies included. So you can skip this part if you clone every thing
+in my project folder.
 
 We have two kinds of dependencies in this project: tools and angular framework code.  The tools help
 us manage and test the application.
