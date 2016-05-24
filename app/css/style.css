@@ -95,7 +95,7 @@ ul.navig li a:hover ul.navig li a:after{
 @media (max-width: 768px){
 span.menu:before {
 	content: url(../images/nav-icon.png);
-	cursor: pointer;	
+	cursor: pointer;
 	height:32px;
 }
 .header {
@@ -291,12 +291,13 @@ select {
 	outline: none;
 	border: none;
 	width: 95%;
+    height: 20%;
 	font-size: 14px;
 	font-weight: 400;
 	cursor: pointer;
 }
 .bnr-one{
-	margin-top:3.3%;
+	margin-top:1%;
 }
 .bnr-one:nth-child(1){
 	margin-top:0;
@@ -316,7 +317,7 @@ select {
 	cursor: pointer;
 }
 .bnr-btn {
-	margin: 5% 0 0 22.2%;
+	margin: 2% 0 0 22.2%;
 }
 .bnr-btn input[type=submit]{
 	color: #403F45;
@@ -325,7 +326,8 @@ select {
 	cursor: pointer;
 	font-weight: 600;
 	border: none;
-	background: #ffeb00;
+	background: #000000;
+    color: white;
 	outline: none;
 }
 .bnr-btn input[type=submit]:hover{
@@ -466,7 +468,7 @@ select {
 	margin-top:2%;
 	text-align:center;
 }
-.touch-bottom p{ 
+.touch-bottom p{
 	color: #fff;
 	font-size:15px;
 }
@@ -869,7 +871,7 @@ h3.ghj {
 .why,.how,.secure,.news,.events,.about,
 .services,.additional,.pages,.contact {
 	padding: 5em 0px;
-}	
+}
 .banner-top {
 	left: 10%;
 }
@@ -881,12 +883,12 @@ h3.ghj {
 .banner-top {
 	left: 8%;
 	width: 37%;
-}	
+}
 }
 @media (max-width:1280px){
 .logo a img {
 	width: 95%;
-}	
+}
 .contact-bottom {
   margin-top: 3%;
 }
@@ -902,7 +904,7 @@ h3.ghj {
 .about-btm {
 	margin-top: 3%;
 }
-ul.navig li a {	
+ul.navig li a {
 	padding: 35px 20px;
 }
 .logo {
@@ -934,7 +936,7 @@ ul.navig li a {
 @media (max-width:1024px){
 .logo a img {
 	width: 87%;
-}	
+}
 ul.navig li a {
 	padding: 30px 20px;
 	font-size: 1.05em;
@@ -1028,7 +1030,7 @@ select {
   font-size: 14px;
 }
 .add-left h4 {
-  font-size: 1.2em;	
+  font-size: 1.2em;
 }
 .additional-bottom {
   margin-top: 2%;
@@ -1284,7 +1286,7 @@ select {
 }
 span.menu {
 	margin: 14px 0px 0 0;
-}	
+}
 .submit-btn input[type=submit] {
   font-size: 15px;
 }
@@ -1337,7 +1339,7 @@ span.menu {
 	padding: 1em 20px 1.2em 20px;
 	top: 12%;
 }
-.bnr-right input[type="text"] {	
+.bnr-right input[type="text"] {
 	padding: 3px 10px;
 }
 select {
@@ -1450,7 +1452,7 @@ h3.ghj {
 @media (max-width:480px){
 .logo a img {
 	width: 60%;
-}	
+}
 ul.navig {
   top: 7.5%;
 }
@@ -1642,7 +1644,7 @@ select {
 @media (max-width:320px){
 .logo a img {
 	width: 50%;
-}	
+}
 .pagination-lg > li > a, .pagination-lg > li > span {
 	padding: 7px 12px;
 	font-size: 15px;
@@ -1664,7 +1666,7 @@ select {
   padding: 0;
   margin-bottom:6.5%;
 }
- .test-left:nth-child(3){ 
+ .test-left:nth-child(3){
 	 margin-bottom:0%;
 }
 .navigation {

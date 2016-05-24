@@ -5,6 +5,15 @@
             <div class="banner-bottom">
                 <div class="bnr-one">
                     <div class="bnr-left">
+                        <p>Location</p>
+                    </div>
+                    <div class="bnr-right">
+                        <input id="autoCompleteField" type="text" value="" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '';}" required=>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="bnr-one">
+                    <div class="bnr-left">
                         <p>Check In</p>
                     </div>
                     <div class="bnr-right">
@@ -40,12 +49,12 @@
                         <p>Room</p>
                     </div>
                     <div class="bnr-right">
-                        <selectk>
+                        <select>
                             <option value="volvo">Select a type</option>
                             <option value="saab">Single</option>
                             <option value="opel">Double</option>
                             <option value="audi">Suite</option>
-                        </selectk>
+                        </select>
                     </div>
                     <div class="clearfix"></div>
                 </div>
@@ -64,5 +73,27 @@
     $(function() {
         $( "#datepicker,#datepicker1" ).datepicker();
     });
+</script>
+
+<script>
+    (function ($) {
+
+        var options = {
+
+            url: "resources/countries.json",
+
+            getValue: "name",
+
+            list: {
+                match: {
+                    enabled: true
+                }
+            },
+
+            theme: "square"
+        };
+
+        $("#autoCompleteField").easyAutocomplete(options);
+    })(jQuery)
 </script>
 <!---/End-date-piker---->
