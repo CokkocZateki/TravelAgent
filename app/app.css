@@ -1,30 +1,39 @@
-/* app css stylesheet */
-
-.menu {
-  list-style: none;
-  border-bottom: 0.1em solid black;
-  margin-bottom: 2em;
-  padding: 0 0 0.5em;
+#content {
+  margin-top: 60px;
 }
 
-.menu:before {
-  content: "[";
+.navbar .label {
+  position: relative;
+  top: 11px;
 }
 
-.menu:after {
-  content: "]";
+.top-row {
+  text-align: center;
+  margin: 10px 0;
 }
 
-.menu > li {
-  display: inline;
+.top-row a div {
+  font-size: 10px;
+  line-height: 12px;
 }
 
-.menu > li:before {
-  content: "|";
-  padding-right: 0.3em;
+.anim.ng-enter {
+  transition: opacity 1s;
+  opacity: 0.0;
 }
 
-.menu > li:nth-child(1):before {
-  content: "";
-  padding: 0;
+.anim.ng-enter-active {
+  opacity: 1.0;
+}
+.anim.ng-leave {
+  display: none;
+}
+
+#loading {
+  position: absolute;
+  width: 300px;
+  top: 10px;
+  left: 500px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+  z-index: 1040;
 }
