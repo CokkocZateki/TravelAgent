@@ -4,10 +4,10 @@ angular.module('myApp.hotelView', ['ngRoute'])
 
     .config(['$routeProvider', function($routeProvider) {
         $routeProvider.when('/hotel', {
-            templateUrl: 'views/hotelView/hotelSearchView.html',
+            templateUrl: 'views/hotel/hotel.search.view.html',
             controller: 'HotelViewCtrl'
         }).when('/hotel/results', {
-            templateUrl: 'views/hotelView/hotelSearchView.html',
+            templateUrl: 'views/hotel/hotel.search.view.html',
             controller: 'HotelViewCtrl'
         });
     }])

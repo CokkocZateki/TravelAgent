@@ -4,10 +4,10 @@ angular.module('myApp.airView', ['ngRoute'])
 
     .config(['$routeProvider', function($routeProvider) {
         $routeProvider.when('/flight', {
-            templateUrl: 'views/airView/airSearchView.html',
+            templateUrl: 'views/air/air.search.view.html',
             controller: 'AirViewCtrl'
         }).when('/flight/results', {
-            templateUrl: 'views/airView/airSearchView.html',
+            templateUrl: 'views/air/air.search.view.html',
             controller: 'AirViewCtrl'
         });
     }])

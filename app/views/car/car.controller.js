@@ -4,10 +4,10 @@ angular.module('myApp.carView', ['ngRoute'])
 
     .config(['$routeProvider', function($routeProvider) {
         $routeProvider.when('/car', {
-            templateUrl: 'views/carView/carSearchView.html',
+            templateUrl: 'views/car/car.search.view.html',
             controller: 'CarViewCtrl'
         }).when('/car/results', {
-            templateUrl: 'views/carView/carSearchView.html',
+            templateUrl: 'views/car/car.search.view.html',
             controller: 'CarViewCtrl'
         });
     }])
